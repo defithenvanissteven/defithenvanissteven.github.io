@@ -1,0 +1,177 @@
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:Courier New, Manospace;
+}
+
+/* Style the header */
+header {
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: black;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+
+
+/* Create two columns/boxes that floats next to each other */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #A9A9A9;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: white;
+}
+
+.active {
+  background-color: black;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color: white;
+  height: 800px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: white;
+  padding: 1px;
+  text-align: center;
+  color: black;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2> Data Kelas </h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a class="active" href="simantik.html"> Home </a></li>
+      <li><a href="presensi.html"> Presensi </a></li>
+       <li><a href="formdaftar.html"> Daftar </a></li>
+      <li style="float:left"><a href="Login.html"> Login </a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h2> Rekap Presensi </h2>
+ <table border="1">
+  <tr bgcolor="#696969">
+    <th>NO </th>
+    <th rowspan="2" width="200"> NAMA </th>
+    <th rowspan="2" width="50"> JK </th>
+    <th rowspan="2" width="100"> KELAS </th>
+    <th colspan="5"> SEPTEMBER </th>
+    <tr bgcolor="#696969"> 
+     <th>1</th>
+     <th>1</th>
+     <th>2</th>
+     <th>3</th>
+     <th>4</th>
+     <th>5</th>
+   </tr>
+  </tr>
+
+ <tr>
+<td> 1 </td>
+<td> Dicky </td>
+<td> - </td>
+<td> XII RPL 1 </td>
+<td> H </td>
+<td> H </td>
+<td> H </td>
+<td> H </td>
+<td> H </td>
+</tr> 
+<tr bgcolor="#696969">
+<td> 2 </td>
+<td> Alin </td>
+<td> - </td>
+<td> XII RPL 1 </td>
+<td> H </td>
+<td> H </td>
+<td> H </td>
+<td> H </td>
+<td> A </td>
+</tr>
+<tr>
+<td> 3 </td>
+<td> Saskia </td>
+<td> - </td>
+<td> XII RPL 1 </td>
+<td> H </td>
+<td> S </td>
+<td> H </td>
+<td> H </td>
+<td> H </td>
+</tr>
+<tr bgcolor="#696969"> 
+<td> 4 </td>
+<td> Rey </td>
+<td> - </td>
+<td> XII RPL 1 </td> 
+<td> I </td>
+<td> H </td>
+<td> H </td>
+<td> H </td>
+<td> H </td>
+
+</tr>
+</table>
+	</section>
+<footer>
+ <p> Created by <br> Defithen Vanis Steven XII RPL 1 </p>
+</footer>
+
+</body>
+</html>
